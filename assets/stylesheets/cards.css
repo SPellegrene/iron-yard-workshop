@@ -1,7 +1,12 @@
-.cards{
+/*
+----------------------------------
+Card Styles
+---------------------------------- */
+
+.cards {
   display: flex;
-  list-style: none;
   flex-direction: column;
+  list-style: none;
   margin: 0;
   padding: 1rem;
 }
@@ -21,19 +26,23 @@
 
 @media(min-width: 650px){
 
-  .cards {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .card{
-    margin-right:.5rem;
-    flex: 1 1 24%;
-  }
+.card {
+  border-radius: 3px;
+  margin-bottom: 1rem;
+  min-height: 100px;
+  padding: 1rem;
+  text-align: center;
 }
+
+.card--coral {
+  background-color: coral;
+}
+}
+
 
 @media(min-width: 1025px){
   .card{
-    flex: 1 1 15%;
+    flex: 1 1 24%;
+    margin-right: .5rem;
   }
 }
